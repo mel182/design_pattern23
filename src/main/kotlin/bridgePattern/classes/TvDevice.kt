@@ -1,7 +1,6 @@
 package bridgePattern.classes
 
 import bridgePattern.classes.base.EntertainmentDevice
-import bridgePattern.classes.base.RemoteButton
 
 /**
  * This is the tv device class which is a sub class of [EntertainmentDevice]

@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalTime::class)
+
 package observerPattern
 
 import kotlinx.coroutines.Dispatchers
@@ -7,6 +9,8 @@ import kotlinx.coroutines.runBlocking
 import observerPattern.classes.GetTheStock
 import observerPattern.classes.StockGrabber
 import observerPattern.classes.StockObserver
+import kotlin.time.Duration.Companion.milliseconds
+import kotlin.time.ExperimentalTime
 
 /**
  * This is an example of the observer pattern. In this example we are going to implement a Stock observer were all classes that subscribe is going to get update related to stock prices.
@@ -44,7 +48,7 @@ fun main() {
         launch(Dispatchers.IO) {
             while(true)
             {
-                delay(2000)
+                delay(2000.milliseconds)
                 GetTheStock(stockGrabber,"IBM",197.00).update() // Update IBM price
                 GetTheStock(stockGrabber,"AAPL",677.00).update() // Update Apple price
                 GetTheStock(stockGrabber,"GOOG",676.40).update() // Update Google price

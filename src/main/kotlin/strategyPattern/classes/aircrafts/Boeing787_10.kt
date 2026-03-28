@@ -1,7 +1,6 @@
 package strategyPattern.classes.aircrafts
 
 import strategyPattern.classes.base.Aircraft
-import strategyPattern.engine.GEnx
 import strategyPattern.engine.RR_Trent_1000
 
 class Boeing787_10 : Aircraft()
