@@ -1,7 +1,5 @@
 package bridgePattern.classes.base
 
-import bridgePattern.classes.base.EntertainmentDevice
-
 /**
  * This is the remote button abstract class
  */
